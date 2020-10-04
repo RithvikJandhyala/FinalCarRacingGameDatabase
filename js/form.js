@@ -17,6 +17,7 @@ class Form {
         this.reset.position(20,20);
         this.reset.mousePressed(()=>{
             game.updateState(0);
+            player.updateRank(0);
             player.updateCount(0);
             database.ref('/').update({
                 players: null
